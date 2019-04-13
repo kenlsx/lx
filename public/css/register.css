@@ -1,0 +1,103 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol{
+margin:0;
+padding:0;
+} 
+body{
+font-size: 12px;
+font-family: "微软雅黑"  ;
+box-sizing: border-box;  
+}
+li{
+list-style: none;
+}
+a{
+text-decoration: none;
+}
+#container{
+width:100%;
+height:800px;
+background-color:#f7f7f7;
+padding-top:50px;
+}
+#container>.content{
+width:850px;
+height:800px;
+background-color:#fff;
+margin:0 auto;
+padding-top:50px;
+}
+#container>.content>.regist{
+width: 358px;
+height: 600px;
+margin:0 auto ;
+padding-top:30px;
+position: relative;
+}
+#container>.content>.regist>.rest{
+    position: absolute;
+    left:0px;
+    top:370px;
+    color:#e22319;
+    font-size: 15px;
+}
+#container>.content>.regist>h1{
+    text-align: center;
+    font-size:36px;
+    font-weight: normal;
+    margin-bottom:40px;
+    color: #e43e38;
+}
+#container>.content>.regist>input{
+width: 291px;
+border: 1px solid #d6d6d6;
+height: 48px;
+line-height: 48px;
+padding-left: 15px;
+font-size: 14px;
+color: #8c8c8c;
+margin-bottom: 14px;
+padding-right: 50px;
+outline: none;
+}
+#container>.content>.regist>.shot{
+    width:180px;
+    float: left;
+}
+#container>.content>.regist>.yanzheng{
+float: left;
+width: 110px;
+height: 50px;
+line-height: 48px;
+text-align: center;
+border: 1px solid #d6d6d6;
+border-left: 0;
+background-color: #f7f7f7;
+color: #3680c1;
+font-size: 14px;
+}
+#container>.content>.regist>input.button{
+height: 50px;
+line-height: 50px;
+width: 358px;
+background-color: #e22319;
+text-align: center;
+font-size: 14px;
+margin: 10px 0 ;
+border-radius: 2px;
+border:none;
+outline: none;
+cursor: pointer;
+color:#fff;
+}
+#container>.content>.regist>input.button:hover{
+    background-color: rgb(207, 11, 11);
+}
+#container>.content>.regist>.argee{
+    font-size:14px;
+}
+#container>.content>.regist>.login{
+    padding-top:50px;
+    margin-left:210px;
+    font-size:16px;
+    color:black;
+}

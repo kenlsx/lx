@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em,span,a{margin:0;padding:0;border:0;}
+body{font-size:14px;font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB",SimSun,sans-serif; color:#686363;}
+ul,ol,li{list-style:none;}
+input{vertical-align:middle; }
+table{border-collapse:collapse;border-spacing:0;}
+img{border:none}
+a{text-decoration:none;color:#333; }
+a:hover{cursor:pointer}
+.left{ float:left}
+.right{ float:right}
+.cl{ clear: both; }
+.margin9{ margin-top:9px;}
+
+.zcodeBody { background: #f6f6f6; padding: 40px 0 140px 0;}
+.zcodeBox{ width: 1200px; margin:0 auto; }
+.zcodeBox h2{background: #e5e5e5; height: 38px; line-height: 38px; font-size: 16px; color: #000; padding: 0 24px;}
+.zcode { background: url(line.png)/*tpa=https://shop.lenovo.com.cn/zcode/images/line.png*/ no-repeat center center #fff; height: 500px;}
+
+.zcode .z_left{ padding: 112px 80px 112px 143px; float: left; width: 355px}
+.zcode .z_right{ padding: 97px 80px; float: left; width: 450px;}
+.zcode .z_left .z_boder{ border: 1px solid #dcdcdc; display: inline-block; border-radius: 3px; padding: 8px 12px; }
+.zcode .z_left .z_boder input{ border: 0; width:311px; }
+.zcode .z_left p { padding: 10px 0; }
+.zcode .z_left .change{ cursor: pointer; }
+.zcode .z_left h4{}
+.zcode .z_left img{ height: 33px; margin-left:18px;  }
+.zcode .z_left .submit { background: #e2231a; width:338px; border-radius: 3px; border: 0;  color: #fff; font-size: 14px; padding: 8px 12px; cursor: pointer;}
+.zcode .z_right h3{padding-bottom: 12px; color: #000;}
+.zcode .z_right p{padding-bottom: 32px;}
+
+
+
+
+

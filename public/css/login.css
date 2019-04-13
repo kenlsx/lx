@@ -1,0 +1,128 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol{
+    margin:0;
+    padding:0;
+} 
+body{
+    font-size: 12px;
+    font-family: "微软雅黑"  ;
+    box-sizing: border-box;  
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width:100%;
+    height:700px;
+    background-color:rgba(0,0,0,.1);
+}
+.container>.content{
+    width:1200px;
+    height:700px;
+    margin:0 auto;
+}
+.container>.content>.login{
+    width:410px;
+    height:525px;
+    float:right;
+    margin-right:15px;
+    margin-top:32px;
+    background-color:#fff;
+}
+.container>.content>.login>h1{
+    font-size:25px;
+    text-align: center;
+    margin:35px ;
+}
+.container>.content>.login .input{
+    width:348px;
+    height:200px;
+    margin:0 auto;
+}
+.container>.content>.login .input .reg{
+    float:right;
+    margin-right: 15px;
+}
+.container>.content>.login .input h3{
+    display: inline-block;
+    font-weight: normal;
+}
+.container>.content>.login .text, .password{
+    width: 282px;
+    border: 1px solid #d6d6d6;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 14px;
+    font-size: 14px;
+    color: #8c8c8c;
+    padding-right: 50px;
+    outline: none;
+    margin-bottom: 15px;
+}
+.container>.content>.login .button{
+    height: 50px;
+    line-height: 50px;
+    width: 348px;
+    background-color: #e22319;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0 ;
+    border-radius: 2px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+.container>.content>.login .button:hover{
+    background-color: rgb(207, 11, 11);
+}
+.resg{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.resg a{
+    color:#8c8c8c;
+    text-decoration: none;
+}
+.container .content .other{
+    text-align: center;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 14px;
+    height: 14px;
+    margin-top:70px;
+    margin-bottom:20px;
+}
+.container .content .other span{
+    display: inline-block;
+    width:126px;
+    height:1px;
+    background-color: #a4a3a3;
+    margin-bottom: 5px;
+}
+.container .content .other em{
+    font-style:normal;
+}
+.container .content .sprict{
+    padding-left: 30px;
+}
+.container .content .sprict a{
+    display: inline-block;
+    width:38px;
+    height:38px;
+    background:url("../img/other.png") no-repeat -150px -670px;
+    border-radius:50%;
+    margin-left:25px;
+}
+.container .content .sprict a:nth-child(2){
+    background-position:-190px -670px;
+}
+.container .content .sprict a:nth-child(3){
+    background-position:-231px -670px;
+}
+.container .content .sprict a:nth-child(4){
+    background-position:-271px -670px;
+}

@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/qs.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <!--头部-->
+  <div id="header"></div>
+
+  <!--轮播区域-->
+  <div id="content">
+    <!--轮播-->
+    <div class="banner">
+      <!--轮播图片-->
+      <div class="ban_box">
+        <img src="img/banner1.jpg" alt="">
+        <img src="img/banner2.jpg" alt="">
+        <img src="img/banner3.jpg" alt="">
+        <img src="img/banner4.jpg" alt="">
+        <img src="img/banner5.jpg" alt="">
+      </div>
+      <ul class="banner_idx">
+        <li class="banner_active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <a  id="banner_prev"></a>
+      <a  id="banner_next"></a>
+      <!--菜单栏-->
+      <div class="menu" >
+        <ul>
+          <li>
+            <a href="#" class="bg">笔记本电脑</a><span></span>
+            <div class="menu_list menu_list1">
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">轻薄笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">便携笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">游戏笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="bg">平板电脑</a><span></span>
+            <div class="menu_list menu_list2">
+              <p><a href="#">X1旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+              <p><a href="#">X2旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+              <p><a href="#">X3旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+              <p><a href="#">X4旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+              <p><a href="#">X5旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+              <p><a href="#">X6旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="bg">手机/通信</a><span></span>
+            <div class="menu_list menu_list3">
+              <p><a href="#">Watch1</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">Watch2</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">Watch3</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">Watch4</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">Watch5</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">Watch6</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="bg">台式机</a><span></span>
+            <div class="menu_list menu_list4">
+              <p><a href="#">X1旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+              <p><a href="#">X2旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+              <p><a href="#">X3旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+              <p><a href="#">X4旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+              <p><a href="#">X5旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+              <p><a href="#">X6旗舰</a></p>
+              <ul>
+                <li><a herf="#">languh1</a></li>
+                <li><a herf="#">languh2</a></li>
+                <li><a herf="#">languh3</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="bg">选件/办公</a><span></span>
+            <div class="menu_list menu_list5">
+            <p><a href="#">Watch1</a></p>
+            <ul>
+              <li><a herf="#">ideapead1</a></li>
+              <li><a herf="#">ideapead2</a></li>
+              <li><a herf="#">ideapead3</a></li>
+            </ul>
+            <p><a href="#">Watch2</a></p>
+            <ul>
+              <li><a herf="#">ideapead1</a></li>
+              <li><a herf="#">ideapead2</a></li>
+              <li><a herf="#">ideapead3</a></li>
+            </ul>
+            <p><a href="#">Watch3</a></p>
+            <ul>
+              <li><a herf="#">ideapead1</a></li>
+              <li><a herf="#">ideapead2</a></li>
+              <li><a herf="#">ideapead3</a></li>
+            </ul>
+            <p><a href="#">Watch4</a></p>
+            <ul>
+              <li><a herf="#">ideapead1</a></li>
+              <li><a herf="#">ideapead2</a></li>
+              <li><a herf="#">ideapead3</a></li>
+            </ul>
+            <p><a href="#">Watch5</a></p>
+            <ul>
+              <li><a herf="#">ideapead1</a></li>
+              <li><a herf="#">ideapead2</a></li>
+              <li><a herf="#">ideapead3</a></li>
+            </ul>
+            <p><a href="#">Watch6</a></p>
+            <ul>
+              <li><a herf="#">ideapead1</a></li>
+              <li><a herf="#">ideapead2</a></li>
+              <li><a herf="#">ideapead3</a></li>
+            </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="bg">配件/服务</a><span></span>
+            <div class="menu_list menu_list6">
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="bg">智能产品</a><span></span>
+            <div class="menu_list menu_list7">
+            <p><a href="#">X1旗舰</a></p>
+            <ul>
+              <li><a herf="#">languh1</a></li>
+              <li><a herf="#">languh2</a></li>
+              <li><a herf="#">languh3</a></li>
+            </ul>
+            <p><a href="#">X2旗舰</a></p>
+            <ul>
+              <li><a herf="#">languh1</a></li>
+              <li><a herf="#">languh2</a></li>
+              <li><a herf="#">languh3</a></li>
+            </ul>
+            <p><a href="#">X3旗舰</a></p>
+            <ul>
+              <li><a herf="#">languh1</a></li>
+              <li><a herf="#">languh2</a></li>
+              <li><a herf="#">languh3</a></li>
+            </ul>
+            <p><a href="#">X4旗舰</a></p>
+            <ul>
+              <li><a herf="#">languh1</a></li>
+              <li><a herf="#">languh2</a></li>
+              <li><a herf="#">languh3</a></li>
+            </ul>
+            <p><a href="#">X5旗舰</a></p>
+            <ul>
+              <li><a herf="#">languh1</a></li>
+              <li><a herf="#">languh2</a></li>
+              <li><a herf="#">languh3</a></li>
+            </ul>
+            <p><a href="#">X6旗舰</a></p>
+            <ul>
+              <li><a herf="#">languh1</a></li>
+              <li><a herf="#">languh2</a></li>
+              <li><a herf="#">languh3</a></li>
+            </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="bg">智选产品</a><span></span>
+            <div class="menu_list menu_list8">
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+              <p><a href="#">常规笔记本</a></p>
+              <ul>
+                <li><a herf="#">ideapead1</a></li>
+                <li><a herf="#">ideapead2</a></li>
+                <li><a herf="#">ideapead3</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--区块-->
+    <ul >
+      <li>
+        <a href="#">
+          <img  src="img/1.png" alt="">
+          <img class="hid" src="img/1.1.png" alt="">
+          <p>会员福利</p>
+        </a>
+    </li>
+      <li>
+        <a href="#">
+          <img src="img/2.png" alt="">
+          <img class="hid" src="img/2.1.png" alt="">
+          <p>领卷中心</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/3.png" alt="">
+          <img class="hid" src="img/3.1.png" alt="">
+          <p>驱动下载</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/4.png" alt="">
+          <img class="hid" src="img/4.1.png" alt="">
+          <p>shop铺子</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/5.png" alt="">
+          <img class="hid" src="img/5.1.png" alt="">
+          <p>拯救联盟</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/6.png" alt="">
+          <img class="hid" src="img/6.1.png" alt="">
+          <p>电脑馆</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/7.png" alt="">
+          <img class="hid" src="img/7.1.png" alt="">
+          <p>手机馆</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/8.png" alt="">
+          <img class="hid" src="img/8.1.png" alt="">
+          <p>智能馆</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/9.png" alt="">
+          <img class="hid" src="img/9.1.png" alt="">
+          <p>学生专区</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!--楼层区域-->
+  <div class="floor">
+    <!--楼层一-->
+    <div id="one" class=first_floor>
+      <!--标题-->
+      <div class="first_title">
+        <h2>便携笔记本 电脑</h2>
+        <div>
+          <ul id="jq_show1">
+            <li data-toggle="tab" data-target="show1" class="active">A系列</li>
+            <li data-toggle="tab" data-target="show2">C系列</li>
+            <li data-toggle="tab" data-target="show3">X系列</li>
+            <li data-toggle="tab" data-target="show4">Y系列</li>
+          </ul>
+        </div>
+      </div>
+      <!--内容-->
+      <div class="first_content " id="main">
+        <div class="first_left"><a href="#"><img src="img/ad1.jpg" alt=""></a></div>
+        <!--A系列-->
+        <div class="first_right z" id="show1">
+          <span class="only"></span>
+          <div v-for="item in res">
+            <a :href="'product_details.html?lid='+item.href" class="fir_img1"><img  :src=item.pic alt=""></a>
+            <a :href="'product_details.html?lid='+item.href" class="fir_img2" v-text="item.title"> </a>
+            <a :href="'product_details.html?lid='+item.href" class="fir_img3" v-text="'¥'+item.price.toFixed(2)"></a> 
+          </div>
+        </div>
+        <!--C系列-->
+        <div class="first_right" id="show2">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/md/57ad359dNd4a6f130.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/58985861N615a3581.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/58985867Nf8909d49.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/58a2c668N0159a26f.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/57ba6a4cNb83e292a.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/57ba6a3dN54779e6a.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/57ba6a27Nbb8d2dcf.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/58a2c667Ne2b5cb73.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+        <!--X系列-->
+        <div class="first_right" id="show3">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+        <!--Y系列-->
+        <div class="first_right" id="show4">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--楼层二-->
+    <div id="two" class=first_floor>
+      <!--标题-->
+      <div class="first_title">
+        <h2>平板电脑</h2>
+        <div>
+          <ul id="jq_show2">
+            <li data-toggle="tab1" data-target="show11" class="active">A系列</li>
+            <li data-toggle="tab1" data-target="show22">C系列</li>
+            <li data-toggle="tab1" data-target="show33">X系列</li>
+            <li data-toggle="tab1" data-target="show44">Y系列</li>
+          </ul>
+        </div>
+      </div>
+      <!--内容-->
+      <div class="first_content">
+        <div class="first_left"><a href="#"><img src="img/md/ad3..jpg" alt=""></a></div>
+        <!--A系列-->
+        <div class="first_right z" id="show11">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/pad1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/2.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/3.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/4.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/5.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/6.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/7.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+        <!--C系列-->
+        <div class="first_right" id="show22">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+        <!--X系列-->
+        <div class="first_right" id="show33">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+        <!--Y系列-->
+        <div class="first_right" id="show44">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--楼层三-->
+    <div id="three" class=first_floor>
+      <!--标题-->
+      <div class="first_title">
+        <h2>手机</h2>
+        <div>
+          <ul id="jq_show3">
+            <li data-toggle="tab2" data-target="show111" class="active">A系列</li>
+            <li data-toggle="tab2" data-target="show222">C系列</li>
+            <li data-toggle="tab2" data-target="show333">X系列</li>
+            <li data-toggle="tab2" data-target="show444">Y系列</li>
+          </ul>
+        </div>
+      </div>
+      <!--内容-->
+      <div class="first_content">
+        <div class="first_left"><a href="#"><img src="img/md/ad2.jpg" alt=""></a></div>
+        <!--A系列-->
+        <div class="first_right z" id="show111">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/phone1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/phone2.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/phone3.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/phone4.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/phone2.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/phone1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/md/phone3.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/phone1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+        <!--C系列-->
+        <div class="first_right" id="show222">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/3-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+        <!--X系列-->
+        <div class="first_right" id="show333">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/5-1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+        <!--Y系列-->
+        <div class="first_right" id="show444">
+          <div class="new">
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+            <span></span>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+          <div>
+            <a href="#" class="fir_img1"><img src="img/c1.jpg" alt=""></a>
+            <a href="#" class="fir_img2">MIIX 520 二合一笔记本 12.2英寸 </a>
+            <a href="#" class="fir_img3">￥5699</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--固定侧边栏右侧-->
+  <div class="side">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <a href="#" title="返回顶部"></a>
+    </ul>
+  </div>
+
+  <!--固定侧边栏左侧-->
+  <div class="left_side">
+    <ul>
+      <li class="one">便携电脑</li>
+      <li class="two">平板电脑</li>
+      <li class="three">手机产品</li>
+    </ul>
+  </div>
+
+  <!--底部-->
+  <div id="footer"></div>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>

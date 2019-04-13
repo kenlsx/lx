@@ -1,0 +1,241 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol{
+    margin:0;
+    padding:0;
+} 
+body{
+    font: 12px "simhei", Arial, Helvetica, sans-serif;
+    color: #666;
+    background-color: #f5f5f5;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width:1000px;
+    height:2000px;
+    margin:50px auto;
+}
+.container>.content{
+    width: 1000px;
+    margin-bottom: 38px;
+    margin-top: 10px;
+}
+.container>.content>.left{
+    float: left;
+    width: 450px;
+    height: 452px;
+    margin-right: 24px;
+    position: relative;
+}
+#mask{
+  width:303.75px; height:303.75px;
+  background-color:#ffa;
+  opacity:.5;
+  position: absolute;
+  top:0px;
+  display: none;
+}
+#super-mask{
+  width:450px; height:450px;
+  position: absolute;
+  top:0px;
+}
+#div-lg{
+  width:540px; height:549px;
+  position: absolute;
+  display: none;
+  top:0px;
+  left:450px;
+  z-index:1000;
+  background:url(../img/lg/asus1.jpg) no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.125)
+}
+.container>.content>.left>.banner{
+    width:450px;
+    height:84px;
+    position: relative;
+}
+.container>.content>.left>.banner>.a_left{
+    display: inline-block;
+    width:22px;
+    height:32px;
+    background:url(../img/__sprite.png) no-repeat 0 -54px;
+    position: absolute;
+    top:23px;
+    left:0;
+    cursor: pointer;
+}
+.container>.content>.left>.banner>.a_right{
+    display: inline-block;
+    width:22px;
+    height:32px;
+    background:url(../img/__sprite.png) no-repeat -78px 0 ;
+    position: absolute;
+    top:23px;
+    right:0;
+    cursor: pointer;
+}
+.container>.content>.left>.banner ul{
+    height:84px;
+    box-sizing: border-box;
+    margin-left:0;
+    transition:all .5s linear;
+    position: relative;
+}
+.container>.content>.left>.banner ul>li{
+    width: 62px;
+    height:62px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    margin-top:10px;
+    box-sizing: border-box;
+}
+.container>.content>.left>.banner ul>li:hover{
+    border:1px solid #e4393c;
+}
+.container>.content>.left>.banner>div{
+    width:310px;
+    overflow: hidden;
+    margin:0 auto;
+}
+.container>.content>.right{
+    float: right;
+    width:500px;
+    height:550px;
+}
+.container>.content>.right>h1{
+    color: #333333;
+    font-family: '\5FAE\8F6F\96C5\9ED1', Arial;
+    font-size: 20px;
+}
+.container>.content>.right>h3{
+    margin-top:10px;
+    color: #333333;
+    font-family: '\5FAE\8F6F\96C5\9ED1', Arial;
+    font-size: 14px;
+}
+.container>.content>.right>.price{
+    background: -webkit-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+    background: -o-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+    background: -ms-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 20px;
+    width: 480px;
+    height: 90px;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+.container>.content>.right>.price>.pro_price{
+    margin-bottom:20px;
+    font-size:15px;
+}
+.container>.content>.right>.price>.pro_price>span{
+    font: 34px "simhei";
+    color: rgb(238, 12, 106);
+    font-family: Arial;
+}
+.container>.content>.right>.price>.pro_price>.promise{
+    margin-top:10px;
+}
+.container>.content>.right>.spec{
+    margin-top:20px;
+}
+.container>.content>.right>.spec>span,.container>.content>.right>.num>span{
+    font-size: 17px;
+}
+.container>.content>.right>.spec>div>a{
+    color: #666;
+    display: block;
+    width:300px;
+    height: 36px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #666666;
+    margin-left:50px;
+    margin-right: 3px;
+    margin-bottom: 2px;
+    padding: 8px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer; 
+    border-radius:3px;
+}
+.container>.content>.right>.spec>div>a:hover{
+    color:#27b0f6;
+    border:1px solid #0AA1ED; 
+}
+.container>.content>.right>.spec>div>a.active{
+    border:2px solid #0AA1ED 
+}
+.container>.content>.right>.num>div>button{
+    font-size:18px;
+    width:30px;
+    height:30px;
+    text-align: center;
+    line-height: 24px;
+    outline: none;
+    border:none;
+}
+.container>.content>.right>.num>div>button:hover{
+    border:1px solid #0AA1ED;
+}
+.container>.content>.right>.num>div>span{
+    display: inline-block;
+    text-align: center;
+    font-size: 17px;
+    width:40px;
+    height:30px;
+}
+.container>.content>.right>.num>div{
+    margin-left:50px;
+}
+.container>.content>.right>.shops>a{
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    position: relative;
+}
+.container>.content>.right>.shops{
+    margin-top:10px;
+    position:relative;
+}
+.container>.content>.right>.shops>a.buy{
+    color: black;
+    background: #fff;
+    margin-right: 16px;
+    background: -moz-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+    background: -webkit-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+    background: -o-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+    background: -ms-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+    box-shadow: 3px 3px 6px #ccc; 
+    border-radius: 5px;
+    border:none;
+}
+.container>.content>.right>.shops>a.buy:hover{
+    background: #ccc;
+}
+.container>.content>.right>.shops>a.cart{
+    color:#fff;
+    background: #fff;
+    margin-right: 16px;
+    background: rgb(5, 70, 247);
+    box-shadow: 3px 3px 6px #ccc; 
+    border-radius: 5px;
+    border:none;
+}
+.container>.content>.right>.shops>a.cart:hover{
+    background: -webkit-linear-gradient(top, #27b0f6 0%, #0aa1ed 100%);
+}
+.container>.content>.right>.shops img{
+    position: absolute;
+    top: 8px;
+    left: 396px;
+}

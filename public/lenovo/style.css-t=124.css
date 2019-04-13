@@ -1,0 +1,286 @@
+* {
+    list-style: none;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.ct-a,
+.ct-a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.ct-block {
+    display: block;
+    height: 100%;
+}
+
+.consumption-container {
+    width: 1220px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    margin-top: 72px;
+}
+
+
+/* .ct-item,
+.ct-head,
+.ct-body,
+.ct-footer {
+    width: 100%;
+} */
+
+.ct-item {
+    margin-bottom: 72px;
+}
+
+.ct-head {
+    /* width: 1200px; */
+    /* margin: 0 10px; */
+    padding: 0 10px;
+}
+
+.ct-head .ct-title {
+    float: left;
+}
+
+.ct-title.title-name {
+    text-align: left;
+    width: 70%;
+}
+
+.ct-title.title-num {
+    width: 30%;
+}
+
+.ct-title.title-name span {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #808080;
+    letter-spacing: 0.17px;
+    line-height: 14px;
+    position: relative;
+    display: inline-block;
+}
+
+.ct-title.title-name .ct-title-one {
+    font-family: PingFangSC-Semibold;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0.29px;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.ct-title.title-name .ct-title-two {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #808080;
+    letter-spacing: 0.17px;
+    line-height: 14px;
+    padding-left: 51px;
+    position: relative;
+    display: inline-block;
+}
+
+.ct-title.title-name .ct-title-two a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 27px;
+    width: 24px;
+    height: 24px;
+    background-image: url(问号@1x.svg)/*tpa=https://shop.lenovo.com.cn/consumptionPoint/img/问号@1x.svg*/
+}
+
+.ct-title.title-num {
+    text-align: right;
+}
+
+.ct-title.title-num .ct-title-one,
+.ct-title.title-num .ct-title-two {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.19px;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.ct-title.title-num .ct-title-two:hover {
+    color: rgb(224, 28, 36);
+    position: relative;
+}
+
+.ct-title.title-num .ct-title-two:hover::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    right: 0;
+    left: 0;
+    bottom: -4px;
+    background: rgb(224, 28, 36);
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* 商品 */
+
+.ct-exchange {
+    margin-top: 50px;
+    overflow: auto;
+    /* min-height: 308px; */
+}
+
+.ct-commodity {
+    list-style: none;
+    overflow: auto;
+    padding: 0 10px 24px 10px;
+}
+
+.ct-commodity-item {
+    width: 240px;
+    height: 284px;
+    float: left;
+    border: 1px solid #F5F5F5;
+    border-right: none;
+    border-top: none;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    -webkit-animation: fadeIn .8s both;
+    -moz-animation: fadeIn .8s both;
+    -o-animation: fadeIn .8s both;
+    -ms-animation: fadeIn .8s both;
+    animation: fadeIn .8s both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.ct-commodity-item:nth-child(5n+1) {
+    border-left: none;
+}
+
+.ct-commodity-item:hover {
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+    -o-transform: translate3d(0, -2px, 0);
+    -moz-transform: translate3d(0, -2px, 0);
+    -ms-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+.ct-commodity-item .ct-c-img>img {
+    height: 140px;
+    width: 140px;
+    margin-top: 32px;
+    display: inline-block;
+}
+
+.ct-commodity-item .ct-c-img.no-name>img {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.ct-commodity-item .ct-c-txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 96px;
+}
+
+.ct-commodity-item .ct-c-txt>p {
+    /* margin-bottom: 32px; */
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 18px;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.ct-c-money {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+}
+
+.txt-c-01 {
+    color: #FF8200;
+}
+
+.ct-c-noMoney {
+    display: none;
+}
+
+.ct-footer {
+    text-align: center;
+    color: #000000;
+    height: 25px;
+}
+
+.ct-footer>div {
+    width: 96px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.ct-footer>div>span {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+}
+
+.ct-footer>div>p {
+    line-height: 9px;
+}
+
+.ct-footer>div>p>img {
+    vertical-align: bottom;
+}
+
+.ct-footer-more {
+    display: none;
+}
+
+.ct-loading {
+    /* display: none; */
+}

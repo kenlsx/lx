@@ -1,0 +1,130 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol{
+    margin:0;
+    padding:0;
+} 
+body{
+    font-family: "微软雅黑"  ;
+    box-sizing: border-box;  
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+#footer>.footer_top{
+    background-color:#f5f5f5;
+}
+#footer>.footer_top>img{
+    display: block;
+    width:1200px;
+    height:83px;
+    margin:0 auto;
+}
+#footer>.footer_mid{
+    width:1200px;
+    height:140px;
+    margin:10px auto;
+}
+#footer>.footer_mid>ul{
+    display: flex;
+    justify-content: space-between;
+}
+#footer>.footer_mid>ul>li>ul>li:first-child{
+    margin-top:10px;
+}
+#footer>.footer_mid>ul>li>ul>li{
+    margin-bottom:5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+#footer>.footer_mid>ul>li>ul>li>a{
+    color:#555;
+}
+#footer>.footer_mid>ul>li>ul>li>a:hover{
+    color:black;
+}
+#footer>.footer_bot{
+    height:400px;
+    background-color:#272727;
+}
+#footer>.footer_bot>.bot{
+    width:1200px;
+    margin:0 auto;
+    color:#ccc;
+    margin-bottom: 60px;
+}
+#footer>.footer_bot>.bot>ul>li{
+    font-weight:bold;
+}
+#footer>.footer_bot>.bot>ul>li:last-child{
+    width:230px;
+}
+#footer>.footer_bot>.bot>ul>li>ul{
+    margin-top:10px;
+}
+#footer>.footer_bot>.bot>ul>li>ul>li{
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+#footer>.footer_bot>.bot a{ 
+    color:#ccc;
+    cursor: pointer;
+    font-size: 13px;
+}
+#footer>.footer_bot>.bot>ul{
+    padding:30px 0 0  80px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .bot_login span{
+    margin-top:15px;
+    display: inline-block;
+    width:37px;
+    height:36px;
+    background:url("../img/footer2.png") no-repeat -8px -190px;
+    cursor: pointer;
+}
+#footer .bot_login span:nth-child(2){
+    background-position: -63px -190px;
+}
+#footer .bot_login span:nth-child(3){
+    background-position: -119px -190px;
+}
+#footer .bot_login span:nth-child(4){
+    background-position: -176px -190px;
+}
+#footer .bot_login span:nth-child(1):hover{
+    background-position: -8px -238px;
+}
+#footer .bot_login span:nth-child(2):hover{
+    background-position: -63px -238px;
+}
+#footer .bot_login span:nth-child(3):hover{
+    background-position: -119px -238px;
+}
+#footer .bot_login span:nth-child(4):hover{
+    background-position: -176px -238px;
+}
+#footer  .footer_city{
+    margin-top:50px;
+    cursor: pointer;
+}
+#footer .city{
+    display: block;
+    width:186px;
+    height:24px;
+    background:url("../img/city.jpg") no-repeat ;
+}
+#footer .bq{
+    width:1200px; 
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    color:#ccc;
+    font-size: 13px;
+    border-top:1px solid rgba(200,200,200,.5);
+    padding:15px;
+}
+ 

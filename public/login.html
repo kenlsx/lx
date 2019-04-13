@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/qs.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container" id="container">
+        <div class="content">
+            <div class="login">
+                <h1>会员登录</h1>
+                <div class="input">
+                    <input class="text" type="text" placeholder="邮箱/手机号码" v-model="uname"><br>
+                    <input class="password" type="password" placeholder="密码" v-model="upwd">
+                    <input  class="checkbox" type="checkbox"> <h3>自动登录</h3> <span class="reg"></span> <br>
+                    <input class="button" type="button" value="登录" @click="login()"><br>
+                    <div class="resg">
+                        <span><a href="#">手机验证码快捷登录</a></span>
+                        <div><a href="http://127.0.0.1:6060/register.html">立即注册</a> | <a href="#">忘记密码?</a></div>
+                    </div>
+                    <div class="other">
+                        <span></span>
+                        <em>其他登录方式</em>
+                        <span></span>
+                    </div>
+                    <div class="sprict">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

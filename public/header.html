@@ -1,0 +1,23 @@
+<div id="header">
+    <a href="index.html"><img src="img/login.jpg" alt="联想商城"></a>
+    <div id="nav">
+        <ul>
+            <li><a href="#">兑换中心</a></li>
+            <li><a href="#">私人订制</a></li>
+            <li><a href="#">急速到家</a></li>
+            <li><a href="#">合伙人</a></li>
+            <li><a href="#">以旧换新</a></li>
+            <li><a href="#">企业采购</a></li>
+            <li><a href="#">0元试用</a></li>
+            <li><a href="#">Z码</a></li>
+        </ul>
+        <div id="search">
+            <input type="text" @keyup.13="search_click()" v-model="keyword" placeholder="拯救者 Y7000 高色域版 ">
+            <a href="#"  @click="search_click($event)"></a>
+        </div>
+        <a href="http://127.0.0.1:6060/login.html" class="login" v-if="!islogin"></a>
+        <span class="uname" v-else>{{uname}}&nbsp;&nbsp; <a href="#" @click="signout()">退出</a>
+        </span>
+        <a href="cart.html" class="cart"></a>
+    </div>
+</div>

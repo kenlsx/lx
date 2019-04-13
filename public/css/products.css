@@ -1,0 +1,164 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol{
+    margin:0;
+    padding:0;
+} 
+body{
+    font-size: 12px;
+    font-family: "微软雅黑"  ;
+    box-sizing: border-box;  
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font: 12px "simhei", Arial, Helvetica, sans-serif;
+    color: #666;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f5f5;
+}
+.banner{
+    width:1200px;
+    height:393px;
+    margin:0 auto;
+    overflow: hidden;
+    margin-top:30px;    
+}
+.container{
+    width:1200px;
+    margin:0 auto;
+    margin-top:30px;
+}
+.container>.title{
+    box-sizing: border-box;
+    width:100%;
+    height:45px;
+    font-size: 20px;
+    line-height: 45px;
+    padding-left: 25px;
+    background: -webkit-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+}
+.container>.content{
+    box-sizing: border-box;
+    width:100%;
+    height:auto;
+    background-color:#fff;
+    padding:25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.container>.content>.product{
+    box-sizing: border-box;
+    width: 265px;
+    height: 420px;
+    margin-right: 14px;
+    margin-bottom:20px;
+    padding:10px;
+    border: 1px solid #f0f0f0;
+    transition: box-shadow .2s linear;
+}
+.container>.content>.product:hover{
+    box-shadow: 0 1px 1px #ccc;
+}
+.container>.content>.product:hover .p_bg>img{
+    transform: scale(1.1);
+}
+.container>.content>.product>.p_bg{
+    display: block;
+    width:240px;
+    height:240px;
+    margin:0 auto;
+}
+.container>.content>.product>.p_bg>img{
+    width:100%;
+    height:100%;
+    transition: all .2s linear;
+}
+.container>.content>.product>.details{
+    width:240px;
+    height:70px;
+    margin-top:10px;
+    padding-left:10px;
+}
+.container>.content>.product>.details>.price{
+    color:rgb(238, 12, 106);
+    font-size:20px;
+    margin-bottom:5px;
+}
+.container>.content>.product>.details>a>span{
+    font-size: 12px;
+    color:black;
+}
+.container>.content>.product>.cart{
+    margin-top:25px;
+    width:240px;
+    height:35px;
+    padding:0 10px;
+}
+.container>.content>.product>.cart>button{
+    width:30px;
+    height:30px;
+    font-size: 20px;
+    border:none;
+    outline: none;
+    border-radius:3px;
+}
+.container>.content>.product>.cart>button:hover{
+    background: -webkit-linear-gradient(top, #bbb 0%, #b3b3b3 100%);
+}
+.container>.content>.product>.cart>span{
+    display: inline-block;
+    width:30px;
+    text-align: center;
+    font-size: 16px;
+}
+.container>.content>.product>.cart>input{
+    background: rgb(5, 70, 247);
+    width:100px;
+    height:35px;
+    border:none;
+    position:relative;
+    bottom:2px;
+    color:#fff;
+    margin-left:20px;
+    cursor: pointer;
+}
+.container>.content>.product>.cart>input:hover{
+    background:-webkit-linear-gradient(top, #27b0f6 0%, #0aa1ed 100%);
+}
+.container>.pager{
+    padding-right: 20px;
+    text-align: right;
+    color: #ccc;
+    float: right;
+    right: 10px;
+    line-height: 45px;
+    background: -moz-linear-gradient(top, #f5f4f5 0%, #e6e6e5 100%);
+    background: -webkit-linear-gradient(top, #f5f4f5 0%,#e6e6e5 100%);
+    background: -o-linear-gradient(top, #f5f4f5 0%,#e6e6e5 100%);
+    background: -ms-linear-gradient(top, #f5f4f5 0%,#e6e6e5 100%);
+    box-shadow: 3px 3px 6px #ccc;
+}
+.container>.pager a{
+    font-size:14px;
+    display: inline-block;
+    color: #0AA1ED;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+    border-radius: 4px;
+}
+.container>.pager>.disabled{
+    background-color:#f2f2f2;
+    color:#ccc;
+}
+.container>.pager>.active{
+    background-color:#0AA1ED;
+    color:#fff;
+}

@@ -1,0 +1,86 @@
+#header{
+    height:50px;
+    background-color:#333;
+}
+#header>a{
+    float:left;
+}
+#header>#nav{
+    width:1200px;
+    height:50px;
+    margin:0 auto;
+    position:relative;
+}
+#header>#nav>ul>li{
+    float: left;
+    width:89px;
+    font-size: 16px;
+    line-height: 50px;
+}
+#header>#nav>ul>li>a{
+    cursor: pointer;
+    color:white;
+}
+#header>#nav>ul>li:nth-child(4){
+    width:76px;
+}
+#header>#nav>#search{
+    width: 270px;
+    height:36px;
+    border-radius: 30px;
+    position: absolute; 
+    right:200px;
+    top:7px;
+    background-color: #fff;
+}
+#header>#nav>#search>input{
+    box-sizing: border-box;
+    width:240px;
+    height:36px;
+    padding:0 20px;
+    background-color: transparent;
+    border:0;
+    outline: none;
+    font-size: 13px;
+}
+#header>#nav>#search>a{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background:url("../img/search.png") no-repeat center center;
+    position:absolute;
+    right:5px;
+    top:3px;
+    border-radius: 50%;
+    border:1px solid gray
+}
+#header>#nav>.login{
+    display:inline-block;
+    width:35px;
+    height:35px;
+    background:url("../img/login.png") no-repeat;
+    position: absolute;
+    right:80px;
+    top:7px;
+    border-radius: 50%;
+}
+#header>#nav>.uname{
+    display:inline-block;
+    position: absolute;
+    right:60px;
+    top:15px;
+    color:#ccc;
+    font-size:15px;
+}
+#header>#nav>.uname>a{
+    color:#ccc;
+}
+#header>#nav>.cart{
+    display: inline-block;
+    width:26px;
+    height:20px;
+    background:url("../img/xb.png") no-repeat -75px -75px;
+    position:absolute;
+    right:20px;
+    top:15px;
+}
